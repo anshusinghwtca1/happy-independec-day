@@ -6,7 +6,7 @@
 }
 body{
 	min-height: 100vh;
-	background: url('../assets/tiranga.jpg');
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../assets/tiranga.jpg');
 	background-repeat: no-repeat;
 	background-position: center;	
 	background-size: cover;
@@ -17,6 +17,7 @@ body{
 	text-shadow: 1px 2px black;
 	letter-spacing: 2px;
 	font-weight: 700;
+  	animation: shine 3s infinite linear;
 }
 #tiranga h2{
 	font-size: 16px;
@@ -26,6 +27,8 @@ body{
 	word-spacing: 5px;
 	color: #5f5656;
 	font-weight: 700;
+  animation: shine 3s infinite linear;
+
 }
 #tiranga .orange{
 	color: #e83302;
@@ -34,19 +37,35 @@ body{
 	color: #054a23;
 }
 #tiranga .black{
-	color: #000;
+ color: #145c14;
 }
-#cont h4{
-	color: #ffc107;
+.white{
+	color: #D3D3D3;
 }
-#btn a{
-	margin-top: 101px;
+#tittle span{
+	color: hsl(0, 0%, 28%);
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
 }
-#logo{
-	margin-top: 35px;
-}
-#logo img{
-	width: 100px;
+#tittle span{
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
 }
 
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+}
+}
+#logo img{
+	margin-top: 67px;
+    width: 113px;
+}
 
